@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引用icon资源 -->
+    <script src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"></script>
+    <title>Login Demo</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="container">
+            <div class="login">
+                <h1>Welcome</h1>
+                <form class="form">
+                    <div class="input-group success">
+                        <label for="email">UserMail</label>
+                        <input type="text" id="email" name="email" placeholder="User Email...">
+                        <br>
+                        <span class="message">Valid Email</span>
+                    </div>
+
+                    <div id="password_group" class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="User Password...">
+                        <span class="password_icon">
+                <i id="eye" class="fa-solid fa-eye"></i>
+                <i id="eye-slash" class="fa-solid fa-eye-slash"></i>
+              </span>
+                        <br>
+                        <span id="password_msg" class="message">Valid Password</span>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
